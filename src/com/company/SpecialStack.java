@@ -5,6 +5,10 @@ package com.company;
  */
 public class SpecialStack <T> extends StackArray <T>{
 
+    SpecialStack(){
+        <Character> super();
+    }
+
     public <T> boolean pop(char brackets) {
 
         if(size == 0)
@@ -14,23 +18,23 @@ public class SpecialStack <T> extends StackArray <T>{
         switch (brackets) {
 //             need to work with array as a char array
             case '}': {
-                if ((char)element[--size] == '{') // cannot cast T to char
+                if (element[--size] == (Character)'{') // cannot cast T to char
                     return true;
                 return false;
             }
             case ')': {
-                if (element[--size] == (T)'(') // cannot cast char to T
+                if (element[--size] == (Character)'(') // cannot cast char to T
                     return true;
                 return false;
             }
 
             case ']': {
-                if (element[--size] == '[')
+                if (element[--size] == (Character)'[')
                     return true;
                 return false;
             }
             case '>': {
-                if (element[--size] == '<')
+                if (element[--size] == (Character)'<')
                     return true;
                 return false;
             }

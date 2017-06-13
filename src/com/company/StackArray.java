@@ -49,5 +49,10 @@ public class StackArray <T>{
             System.out.println(element[i]);
         }
     }
+    public boolean isElement(){
+        if (size > 0)
+            return false;
+        return true;
+    }
 
 }

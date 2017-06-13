@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            ParsingBrackets arcsArray = new ParsingBrackets();
+            SpecialStack arcsArray = new SpecialStack();
             boolean isWrite = false;
             BufferedReader stream = new BufferedReader(new FileReader("TestCase.txt"));
             String data ;
