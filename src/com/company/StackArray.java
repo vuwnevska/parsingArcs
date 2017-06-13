@@ -8,9 +8,6 @@ public class StackArray <T>{
     protected T[] element  = (T[]) new Object [0];
     protected   int size;
 
-//    StackArray(Object c){
-//         element  = new Object[0];
-//    }
 
 
     public void push(T value)
